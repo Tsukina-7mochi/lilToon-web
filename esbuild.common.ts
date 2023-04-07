@@ -29,7 +29,7 @@ const config: Partial<esbuild.BuildOptions> = {
       baseDir: srcPath,
       baseOutDir: destPath,
       files: [
-        { from: 'imgs/*', to: 'imgs/[name][ext]' },
+        { from: 'favicon/*', to: 'favicon/[name][ext]' },
       ]
     }),
     resultPlugin(),
