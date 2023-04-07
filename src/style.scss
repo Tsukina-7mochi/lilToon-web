@@ -79,14 +79,32 @@ main nav {
 
     &#nav_booth {
       background-color: $color-booth;
+      &:hover {
+        background-color: lighten($color-booth, 1.5%);
+      }
+      &:active {
+        background-color: lighten($color-booth, 3%);
+      }
     }
 
     &#nav_github {
       background-color: $color-github;
+      &:hover {
+        background-color: lighten($color-github, 5%);
+      }
+      &:active {
+        background-color: lighten($color-github, 10%);
+      }
     }
 
     &#nav_vpm {
       background-color: $color-vcc;
+      &:hover {
+        background-color: lighten($color-vcc, 4%);
+      }
+      &:active {
+        background-color: lighten($color-vcc, 8%);
+      }
     }
   }
 }
