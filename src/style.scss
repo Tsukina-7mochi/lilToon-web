@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 18px;
+  color: white;
+
+  background-image:
+    linear-gradient(120deg, rgba(255, 54, 181, 1), rgba(255, 255, 255, 0)),
+    linear-gradient(185deg, rgba(54, 156, 255, 1), rgba(255, 255, 255, 0)),
+    linear-gradient(340deg, rgba(255, 225, 0, 1), rgba(255, 255, 255, 0));
+}
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#logo_h1 {
+  display: inline-block;
+  width: 100%;
+  max-width: 40em;
+}
+
+$color-booth: #ff5c67;
+$color-github: #24292f;
+$color-vcc: #35b6d6;
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 100%;
+  margin: 0 1em;
+}
+
+main nav {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  @media screen and (min-width: 64rem) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  div {
+    border-radius: 0.25em;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      padding: 0.5em 2em;
+
+      color: inherit;
+      text-decoration: unset;
+
+      svg {
+        height: 1em;
+        min-width: 1em;
+      }
+    }
+
+    &#nav_booth {
+      background-color: $color-booth;
+    }
+
+    &#nav_github {
+      background-color: $color-github;
+    }
+
+    &#nav_vpm {
+      background-color: $color-vcc;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+}

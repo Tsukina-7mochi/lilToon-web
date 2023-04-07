@@ -11,8 +11,8 @@ const cachePath = 'cache';
 
 const config: Partial<esbuild.BuildOptions> = {
   entryPoints: [
-    posix.join(srcPath, 'main.ts'),
     posix.join(srcPath, 'index.html'),
+    posix.join(srcPath, 'style.scss'),
   ],
   bundle: true,
   outdir: destPath,
